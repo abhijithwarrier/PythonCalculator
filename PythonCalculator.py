@@ -1,5 +1,5 @@
 # Programmer - python_scripts (Abhijith Warrier)
-
+#
 # PYTHON SCRIPT TO CREATE A SIMPLE GUI CALCULATOR & PERFORM THE CALCULATION eval() METHOD IN PYTHON
 #
 # The eval() allows to run Python code within itself. The eval() method parses the expression passed to it and runs
@@ -16,7 +16,7 @@ from tkinter import *
 
 # Defining CreateWidgets() function to create necessary tkinter widgets
 def CreateWidgets():
-    CalcDisplay = Entry(root, bd=10, justify="right", font=("Comic Sans MS", 20, "bold"), textvariable=d_value, bg="sienna3")
+    CalcDisplay = Entry(root, bd=10, justify="right", font=("Comic Sans MS", 20, "bold"), textvariable=d_value, bg="mediumpurple3")
     CalcDisplay.grid(row=0, column=0, columnspan=5)
 
     B_AllClear = Button(root, text="AC", bd=5,  font=("Comic Sans MS", 20, "bold"), width=4, height=2, command=allclearEntry)
@@ -115,9 +115,9 @@ def clearEntry():
 root = tk.Tk()
 
 # Setting the title, window size, background color and disabling the resizing property
-root.title('PyCalculator')
+root.title('PythonCalculator')
 root.resizable(False, False)
-root.configure(background='sienna4')
+root.configure(background='mediumpurple4')
 
 # Creating tkinter variable
 d_value = StringVar()
